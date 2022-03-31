@@ -1,0 +1,27 @@
+  
+  .header__content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    height: 60px;
+    background-color: #90caf9
+  }
+  
+  .header__logo {
+    font-size: 32px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .btn-join {
+    color: #fff; 
+    text-decoration: none; 
+    user-select: none; 
+    background: rgb(55, 157, 247);
+    padding: .3em 1.5em; 
+    outline: none; 
+  } 
+  .btn-join:hover { background: rgb(11, 234, 96); } 
+  .btn-join:active { background: rgb(11, 234, 96);; } 
