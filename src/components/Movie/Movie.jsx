@@ -9,10 +9,18 @@ function Movie(props) {
         Poster: poster,
     } = props;
 
-    return (
-        <div id={id} className='card-movie'>
+     return ( 
+    <div id={id} className='card-movie'>
             <div className='card-images'>
-                <img src={poster} alt="Not" />
+            
+             {poster === 'N/A' ? (
+                 <img
+                 className='activator'
+                 src={`https://via.placeholder.com/300x400?text=${title}`}
+                 />
+                 ) : (
+                     <img className='activator' src={poster} />
+                     )}
             </div>
             <div className='card-content'>
                 <h3 className='movie-name'>{title}</h3>
@@ -21,6 +29,7 @@ function Movie(props) {
                 <span className='movie-tags'>Type : {type}</span>
             </div>
          </div>   
+        
     )
 }
 export { Movie };
